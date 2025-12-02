@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    transition: .3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.view-all {
+    margin-left: auto;
+    margin-right: 20px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Gallery */
+.gallery {
+    margin-top: 20px;
+}
+
+.grid-3 {
+    columns: 3;
+    column-gap: 20px;
+}
+
+.grid-3 img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.grid-3 img {
+    width: 100%;
+    border-radius: 1px;
+    object-fit: cover;
+}
+
+/* Top selling */
+.top-products {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.subtitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.description {
+    max-width: 550px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    align-items: center;
+}
+
+.grid-5 img {
+    width: 100%;
+    border-radius: 1px;
+    object-fit: cover;
+}
+
+/* Dark Theme */
+body.dark {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+body.dark .description {
+    color: #cccccc;
+}
+
+body.dark img {
+    filter: brightness(.85);
+}
